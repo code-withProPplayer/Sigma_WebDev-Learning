@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css sizing units-px,rem,em,vh,vw,% & more</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            font-size: 12px;
+        }
+
+        .box {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            height: 10vh;
+            margin: auto;
+            background-color: aquamarine;
+        }
+
+        .container {
+            box-sizing: border-box;
+            border: 2px solid black;
+            /* width: 2048px; */
+            width: 80vw;
+            /* height: 80vh; */
+            min-height: 80vh;
+            margin: 23px auto;
+            font-size: 18px;
+            background-color: aquamarine;
+        }
+
+        .container>div{
+            font-size: 2em;
+            border: 2px solid red;
+            width: 50%;
+        }
+        .container>div> div {
+            border: 2px solid blue;
+            width: 50%;
+        }
+
+        .mycont {
+            box-sizing: border-box;
+            border: 2px solid black;
+            margin: 23px auto;
+            color: rgb(23, 41, 55);
+            font-size: 22px;
+            /* width: 100vmin; */
+            width: 80vw;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        this is a box.
+    </div>
+
+    <div class="container">
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt repudiandae sint ex id, eos rerum? Quaerat
+        fuga
+        possimus consectetur laboriosam laudantium officia libero a expedita veniam ad, itaque blanditiis harum
+        molestias nihil numquam officiis sint aspernatur sit asperiores. Dicta voluptatem, voluptate, iste molestias
+        earum perferendis laboriosam officia, optio dolorem nihil veniam adipisci sapiente ipsa possimus illum?
+
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos cumque, cum, dolorem qui eveniet ipsa doloribus ad atque veritatis sit quo nemo quas.
+        </div>
+    </div>
+    
+    </div>
+
+    <div class="mycont">
+        my another container.
+    </div>
+</body>
+
+</html>

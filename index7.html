@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors</title>
+    <style>
+        /*div{
+            background-color: red;
+        }*/
+        /*class selector*/
+        .red{
+            background-color: red;
+        }
+        /*id selector*/
+        #green{
+            background-color: rgb(22, 193, 22);
+        }
+        div > p{
+            background-color: rgb(8, 8, 2);
+            color: rgb(27, 222, 222);
+        }
+        /*Descendant selector*/
+        div  p{
+            background-color: rgb(17, 228, 154);
+            color: rgb(101, 6, 185);
+        }
+        /*Universal selector*/
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        /* Pseudo selector */
+        a:link{
+            color: rgb(18, 44, 18);
+        }
+
+        a:visited{
+            color: rgb(215, 215, 18);
+        }
+
+        a:active{
+            background-color: rgb(220, 228, 218);
+        }
+
+        a:hover{
+            background-color: rgb(41, 219, 169);
+        }
+
+        p:first-child{
+            background-color: rgb(148, 95, 25);
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>i am first</p>
+        <p>i am second</p>
+    </main>
+    <div class="red">
+        i am a div.
+        <article>
+            <p>Lorem ipsum dolor sit amet.</p>
+        </article>
+        
+    </div>
+    <div id="green">
+        this is second div.
+    </div>
+    <a href="https://www.google.com" target="_blank"> Go to Google</a>
+    <a href="https://www.facebook.com" target="_blank">Go to Facebook</a>
+    <a href="https://www.youtube.com" target="_blank">Go to youtube</a>
+    <a href="https://www.amazon.com" target="_blank">Go to Amazon</a>
+
+</body>
+</html>
